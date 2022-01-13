@@ -44,10 +44,10 @@ function admin_menus(){
 
     add_submenu_page(
         $parent_slug,
-        __('Add/Edit Product', 'act'),
-        __('Add/Edit Product', 'act'),
+        __('Add/Edit Single Product', 'act'),
+        __('Add/Edit Single Product', 'act'),
         'manage_options',
-        'edit.php?post_type=product',
+        'edit.php?post_type=actproduct',
         ''
     );
 
@@ -99,4 +99,6 @@ require_once(dirname(__FILE__) . '/inc/act-box-cpt.php');
 require_once(dirname(__FILE__) . '/inc/act-box-shortcode.php');
 require_once(dirname(__FILE__) . '/inc/act-table-cpt.php');
 require_once(dirname(__FILE__) . '/inc/act-table-shortcode.php');
+require_once(dirname(__FILE__) . '/inc/act-single-product-cpt.php');
+require_once(dirname(__FILE__) . '/inc/act-single-product-shortcode.php');
 require_once(dirname(__FILE__) . '/piklist/piklist.php');
