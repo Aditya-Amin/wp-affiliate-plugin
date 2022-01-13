@@ -15,6 +15,16 @@ piklist('field', array(
         'class'     => 'widefat'
     ),
 ));
+
+piklist('field', array(
+    'type'          => 'text',
+    'field'         => 'act_single_pro_url',
+    'label'         => __('Affiliate Url', 'dpresstable'),
+    'value'         => '#',
+    'attributes'    => array(
+        'class'     => 'widefat'
+    ),
+));
 piklist('field', array(
     'type'          => 'hidden',
     'field'         => 'dpresspro_shortcode_id',

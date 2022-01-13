@@ -3,7 +3,7 @@
 function act_single_product_cpt() {
 
     $labels = array(
-        'name' => _x( 'ACT Products', 'Post Type General Name', 'dpresstable' ),
+        'name' => _x( 'ACT Products ( Product List Shortcode: [actsingleproductlists] )', 'Post Type General Name', 'dpresstable' ),
         'singular_name' => _x( 'ACT Product', 'Post Type Singular Name', 'dpresstable' ),
         'menu_name' => _x( 'ACT Products', 'Admin Menu text', 'dpresstable' ),
         'name_admin_bar' => _x( 'ACT Product', 'Add New on Toolbar', 'dpresstable' ),

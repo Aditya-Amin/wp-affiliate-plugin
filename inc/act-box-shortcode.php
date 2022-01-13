@@ -9,7 +9,7 @@ function dpressall_product_box_shortcode($attr){
     //var_dump($dpresstable_product_params);
 
     ob_start(); ?>
-    <div class="dpress-three-box-before">
+    <div class="dpress-three-box-before" style="overflow: hidden;">
     <div class="dpressall-three-pro-box">
         <?php
             $dpresstable_pro_args = new WP_Query(array(

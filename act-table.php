@@ -101,4 +101,5 @@ require_once(dirname(__FILE__) . '/inc/act-table-cpt.php');
 require_once(dirname(__FILE__) . '/inc/act-table-shortcode.php');
 require_once(dirname(__FILE__) . '/inc/act-single-product-cpt.php');
 require_once(dirname(__FILE__) . '/inc/act-single-product-shortcode.php');
+require_once(dirname(__FILE__) . '/inc/act-single-product-lists-shortcode.php');
 require_once(dirname(__FILE__) . '/piklist/piklist.php');
