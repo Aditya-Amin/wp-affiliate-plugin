@@ -74,7 +74,7 @@ function act_table_main_shortcode($attr){
                         <tr>
                             <td class="dpressall-tbl-colum-one">
                             <?php if($table_meta_value['product_tag_text']): ?>
-                            <div class="dpress-table-tag">
+                            <div class="dpress-table-tag" style="background:<?php echo esc_attr($dpress_tbl_tag_bg_color); ?>">
                                 <span>
                                 <?php echo esc_html($table_meta_value['product_tag_text']); ?>
                                 </span>
@@ -93,7 +93,7 @@ function act_table_main_shortcode($attr){
                             </td>
                             <?php if($table_meta_value['product_tag_text']): ?>
                             <td class="dpress-table-tag-mobile-label">
-                                <div class="dpress-table-tag-mobile">
+                                <div class="dpress-table-tag-mobile" style="background:<?php echo esc_attr($dpress_tbl_tag_bg_color); ?>">
                                     <span><?php echo esc_html($table_meta_value['product_tag_text']); ?></span>
                                 </div>
                             </td>
@@ -121,9 +121,9 @@ function act_table_main_shortcode($attr){
                                 </span>
                                 <?php endif; ?> -->
                                 <a href="<?php echo esc_url($table_meta_value['product_url']); ?>" target="_blank" rel="nofollow" class="btn btn-dpress-tbl-price" style="background: <?php echo esc_attr($dpress_tbl_button_bg_color); ?>; color: <?php echo esc_attr($dpress_tbl_button_text_color); ?>">
-                                <span class="btn-content-icon">
+                                <!-- <span class="btn-content-icon">
                                     <i class="fab fa-amazon"></i>
-                                </span>
+                                </span> -->
                                 <span class="btn-content-text">
                                     <?php echo esc_html($dpress_tbl_btn_text); ?>
                                 </span>

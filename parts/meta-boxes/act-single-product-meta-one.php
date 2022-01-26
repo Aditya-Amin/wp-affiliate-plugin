@@ -8,6 +8,15 @@ $act_single_pro_id = get_the_ID();
 $act_single_pro_shortcode = "[actsingleproduct actsingleproduct_post_id='{$act_single_pro_id}']";
 piklist('field', array(
     'type'          => 'text',
+    'field'         => 'actsingleproduct_post_id',
+    'label'         => __('Copy This Shortcode', 'dpressall'),
+    'value'         => $act_single_pro_shortcode,
+    'attributes'    => array(
+        'class'     => 'widefat'
+    ),
+));
+piklist('field', array(
+    'type'          => 'text',
     'field'         => 'act_single_product_order',
     'label'         => __('Product Order', 'dpresstable'),
     'value'         => 0,
@@ -25,15 +34,7 @@ piklist('field', array(
         'class'     => 'widefat'
     ),
 ));
-piklist('field', array(
-    'type'          => 'hidden',
-    'field'         => 'dpresspro_shortcode_id',
-    'label'         => __('Copy This Shortcode', 'dpressall'),
-    'value'         => $act_single_pro_shortcode,
-    'attributes'    => array(
-        'class'     => 'widefat'
-    ),
-));
+
 
 piklist('field', array(
     'type'          => 'colorpicker',

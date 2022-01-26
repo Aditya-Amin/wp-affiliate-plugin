@@ -7,7 +7,7 @@
 $dpress_table_id = get_the_ID();
 $dpress_table_shortocde = "[acttable acttable_post_id='{$dpress_table_id}']";
 piklist('field', array(
-    'type'          => 'hidden',
+    'type'          => 'text',
     'field'         => 'dpresstable_shortcode_id',
     'label'         => __('Copy This Shortcode', 'dpresstable'),
     'value'         => $dpress_table_shortocde,
@@ -36,7 +36,7 @@ piklist('field', array(
 piklist('field', array(
     'type'          => 'colorpicker',
     'field'         => 'dpress_tbl_product_title_color',
-    'label'         => __('Product Title Color', 'dpresstable'),
+    'label'         => __('Table Product Title Color', 'dpresstable'),
     'value'         => '#5C8D22',
     'attributes'    => array(
         'class'     => 'widefat'
@@ -99,7 +99,7 @@ piklist('field', array(
 piklist('field', array(
     'type'          => 'text',
     'field'         => 'dpress_tbl_button_text',
-    'label'         => __('Button Title', 'dpresstable'),
+    'label'         => __('Table Button Title', 'dpresstable'),
     'value'         => __('Check Price', 'dpresstable'),
     'attributes'    => array(
         'class'     => 'widefat'

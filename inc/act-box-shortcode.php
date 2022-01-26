@@ -93,9 +93,9 @@ function dpressall_product_box_shortcode($attr){
             </div>
             <div class="dpressall-best-pro-footer">
                 <a href="<?php echo esc_url($pro_meta_value['dpress_pro_url']); ?>" target="_blank" rel="nofollow" class="btn btn-dpress-tbl-price" style="background: <?php echo esc_attr($dpress_pro_btn_bg); ?>; color: <?php echo esc_attr($dpress_pro_btn_text_color); ?>">
-                    <span class="btn-content-icon">
+                    <!-- <span class="btn-content-icon">
                         <i class="fab fa-amazon"></i>
-                    </span>
+                    </span> -->
                     <span class="btn-desktop-text btn-content-text">
                         <?php echo esc_html($dpress_pro_btn_txt); ?>
                     </span>
@@ -136,7 +136,7 @@ function dpressall_product_box_shortcode($attr){
                 }
 
                 .product_award:after {
-                    border-top: 10px solid <?php echo esc_attr($dpress_pro_tag_bg); ?>;
+                    border-top: 10px solid #<?php echo esc_attr($dpress_pro_tag_bg); ?>;
                 }
             </style>
             <div class="product_award">

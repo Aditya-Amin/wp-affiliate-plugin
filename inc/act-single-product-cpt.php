@@ -73,7 +73,7 @@ function custom_actproduct_column( $column, $post_id ) {
 
         case 'shortcode' :
             $terms = get_post_meta( $post_id );
-            echo $terms['dpresspro_shortcode_id'][0];
+            echo $terms['actsingleproduct_post_id'][0];
             break;
 
         case 'order' :

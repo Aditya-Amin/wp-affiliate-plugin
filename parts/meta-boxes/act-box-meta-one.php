@@ -7,7 +7,7 @@
 $dpress_pro_id = get_the_ID();
 $dpress_pro_shortocde = "[actproduct actproduct_post_id='{$dpress_pro_id}']";
 piklist('field', array(
-    'type'          => 'hidden',
+    'type'          => 'text',
     'field'         => 'dpresspro_shortcode_id',
     'label'         => __('Copy This Shortcode', 'dpressall'),
     'value'         => $dpress_pro_shortocde,
