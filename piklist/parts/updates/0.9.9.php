@@ -56,7 +56,7 @@ if (!class_exists('Piklist_Update_0_9_9'))
 						<?php _e('Here are your choices:'); ?>
 						<ul>
 							<li><?php printf(__('1. Run the upgrade script and then make changes to your files. You can learn more about the changes needed %1$s on our website.%2$s', 'piklist'), '<a href="https://piklist.com/2016/06/09/piklist-v0-9-9-8-coming-need-know/" target="_blank">', '</a>');?></li>
-							<li><?php printf(__('2. If you are not ready to make these changes, then STOP. Delete this version of Piklist, %1$s download the old version%2$s from WordPress.org, and install it. Use it until you are ready to do the upgrade.', 'piklist'), '<a href="https://downloads.wordpress.org/plugin/piklist.0.9.4.31.zip" target="_blank">', '</a>');?></li>
+							<li><?php printf(__('2. If you are not ready to make these changes, then STOP. Delete this version of Piklist, %1$s download the old version%2$s from Woract.org, and install it. Use it until you are ready to do the upgrade.', 'piklist'), '<a href="https://downloads.woract.org/plugin/piklist.0.9.4.31.zip" target="_blank">', '</a>');?></li>
 						</ul>
             <strong><?php _e('IMPORTANT: Backup your database before running the upgrade.'); ?></strong>
           </p>

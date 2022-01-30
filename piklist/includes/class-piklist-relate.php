@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 /**
  * Piklist_Relate
- * Adds object relationships to WordPress.
+ * Adds object relationships to Woract.
  *
  * @package     Piklist
  * @subpackage  Relate
@@ -37,7 +37,7 @@ class Piklist_Relate
 
   /**
    * register_meta
-   * Register relate meta with WordPress.
+   * Register relate meta with Woract.
    *
    * @access public
    * @static

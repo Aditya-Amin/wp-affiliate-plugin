@@ -15,7 +15,7 @@ Flow: Demo Workflow
 ?>
 
 <div class="piklist-demo-highlight">
-  <?php _e('Piklist comes standard with two upload fields: Basic and Media. The Media field works just like the standard WordPress media field, while the Basic uploader is great for simple forms.', 'piklist-demo');?>
+  <?php _e('Piklist comes standard with two upload fields: Basic and Media. The Media field works just like the standard Woract media field, while the Basic uploader is great for simple forms.', 'piklist-demo');?>
 </div>
 
 <?php

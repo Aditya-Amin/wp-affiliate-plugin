@@ -93,7 +93,7 @@
     'type' => 'text'
     ,'field' => 'validate_file_exists'
     ,'label' => __('File exists?', 'piklist-demo')
-    ,'description' => sprintf(__('Test with: %s', 'piklist-demo'), 'http://wordpress.org/plugins/about/readme.txt')
+    ,'description' => sprintf(__('Test with: %s', 'piklist-demo'), 'http://woract.org/plugins/about/readme.txt')
     ,'attributes' => array(
       'class' => 'large-text'
     )

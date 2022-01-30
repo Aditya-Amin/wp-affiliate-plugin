@@ -6,8 +6,8 @@ function act_table_main_shortcode($attr){
     $default = array(
         'acttable_post_id'                   => '',
     );
-    $dpresstable_main_table_params   = shortcode_atts($default, $attr);
-    $dpress_table_ids = $dpresstable_main_table_params['acttable_post_id'];
+    $acttable_main_table_params   = shortcode_atts($default, $attr);
+    $act_table_ids = $acttable_main_table_params['acttable_post_id'];
 
     ob_start(); ?>
     <div class="wpstrom-product-table">
@@ -16,71 +16,71 @@ function act_table_main_shortcode($attr){
                 <div class="col-md-12">
                     <div class="wpstrom-product-table-inner">
                         <?php
-                        $dpresstable_table_args = new WP_Query(array(
+                        $acttable_table_args = new WP_Query(array(
                             'posts_per_page'        => 1,
-                            'post__in'              => array($dpress_table_ids),
+                            'post__in'              => array($act_table_ids),
                             'post_type'             => 'acttable',
                             'ignore_sticky_posts'   => 1,
                             'post_status'           => 'publish'
                         ));
-                        while ($dpresstable_table_args->have_posts()) : $dpresstable_table_args->the_post();
-                        $dpress_tbl_heading_bg_color    = get_post_meta(get_the_ID(), 'dpress_tbl_heading_bg_color', true);
-                        $dpress_tbl_heading_text_color  = get_post_meta(get_the_ID(), 'dpress_tbl_heading_text_color', true);
-                        $dpress_tbl_button_bg_color     = get_post_meta(get_the_ID(), 'dpress_tbl_button_bg_color', true);
-                        $dpress_tbl_button_text_color   = get_post_meta(get_the_ID(), 'dpress_tbl_button_text_color', true);
-                        $dpress_tbl_btn_text            = get_post_meta(get_the_ID(), 'dpress_tbl_button_text', true);
-                        $dpress_tbl_tag_bg_color        = get_post_meta(get_the_ID(), 'dpress_tbl_tag_bg_color', true);
-                        $dpress_tbl_tag_text_color      = get_post_meta(get_the_ID(), 'dpress_tbl_tag_text_color', true);
-                        $dpress_tbl_txt_color           = get_post_meta(get_the_ID(), 'dpress_tbl_txt_color', true);
-                        $dpress_tbl_font_size           = get_post_meta(get_the_ID(), 'dpress_tbl_font_size', true);
-                        $dpress_tbl_heading_text_one    = get_post_meta(get_the_ID(), 'dpress_tbl_heading_text_one', true);
-                        $dpress_tbl_heading_text_two    = get_post_meta(get_the_ID(), 'dpress_tbl_heading_text_two', true);
-                        $dpress_tbl_heading_text_three    = get_post_meta(get_the_ID(), 'dpress_tbl_heading_text_three', true);
-                        $dpress_tbl_heading_text_four    = get_post_meta(get_the_ID(), 'dpress_tbl_heading_text_four', true);
-                        $dpress_tbl_product_title_color    = get_post_meta(get_the_ID(), 'dpress_tbl_product_title_color', true);
-                        $dpress_tbl_tag_color    = get_post_meta(get_the_ID(), 'dpress_tbl_tag_color', true);
-                        $dpress_tbl_feature_icon_color    = get_post_meta(get_the_ID(), 'dpress_tbl_feature_color', true);
+                        while ($acttable_table_args->have_posts()) : $acttable_table_args->the_post();
+                        $act_tbl_heading_bg_color    = get_post_meta(get_the_ID(), 'act_tbl_heading_bg_color', true);
+                        $act_tbl_heading_text_color  = get_post_meta(get_the_ID(), 'act_tbl_heading_text_color', true);
+                        $act_tbl_button_bg_color     = get_post_meta(get_the_ID(), 'act_tbl_button_bg_color', true);
+                        $act_tbl_button_text_color   = get_post_meta(get_the_ID(), 'act_tbl_button_text_color', true);
+                        $act_tbl_btn_text            = get_post_meta(get_the_ID(), 'act_tbl_button_text', true);
+                        $act_tbl_tag_bg_color        = get_post_meta(get_the_ID(), 'act_tbl_tag_bg_color', true);
+                        $act_tbl_tag_text_color      = get_post_meta(get_the_ID(), 'act_tbl_tag_text_color', true);
+                        $act_tbl_txt_color           = get_post_meta(get_the_ID(), 'act_tbl_txt_color', true);
+                        $act_tbl_font_size           = get_post_meta(get_the_ID(), 'act_tbl_font_size', true);
+                        $act_tbl_heading_text_one    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_one', true);
+                        $act_tbl_heading_text_two    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_two', true);
+                        $act_tbl_heading_text_three    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_three', true);
+                        $act_tbl_heading_text_four    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_four', true);
+                        $act_tbl_product_title_color    = get_post_meta(get_the_ID(), 'act_tbl_product_title_color', true);
+                        $act_tbl_tag_color    = get_post_meta(get_the_ID(), 'act_tbl_tag_color', true);
+                        $act_tbl_feature_icon_color    = get_post_meta(get_the_ID(), 'act_tbl_feature_color', true);
                      ?>
                     
                     <style type="text/css">
-                        .dpress-table-tag, .dpress-table-tag-mobile{
-                            border: 2px solid <?php echo esc_attr($dpress_tbl_tag_color); ?>;
+                        .act-table-tag, .act-table-tag-mobile{
+                            border: 2px solid <?php echo esc_attr($act_tbl_tag_color); ?>;
                         }
-                        .dpress-table-tag::before, .dpress-table-tag-mobile::before{
-                            border-right: 9px solid <?php echo esc_attr($dpress_tbl_tag_color); ?>;
+                        .act-table-tag::before, .act-table-tag-mobile::before{
+                            border-right: 9px solid <?php echo esc_attr($act_tbl_tag_color); ?>;
                         }
                         .wpstrom-table-pro-feture ul li::before {
-                            background: <?php echo esc_attr($dpress_tbl_feature_icon_color); ?>;
+                            background: <?php echo esc_attr($act_tbl_feature_icon_color); ?>;
                         }
                     </style>
 
-                    <table class="table dpressall-table">
-                        <thead class="dpressall-tbl-head" style="background: <?php echo esc_attr($dpress_tbl_heading_bg_color); ?>; color: <?php echo esc_attr($dpress_tbl_heading_text_color); ?>">
+                    <table class="table actall-table">
+                        <thead class="actall-tbl-head" style="background: <?php echo esc_attr($act_tbl_heading_bg_color); ?>; color: <?php echo esc_attr($act_tbl_heading_text_color); ?>">
                             <tr>
-                                <th class="dpressall-tbl-img"><?php echo esc_html($dpress_tbl_heading_text_one); ?></th>
-                                <th class="dpressall-tbl-model"><?php echo esc_html($dpress_tbl_heading_text_two); ?></th>
-                                <th class="dpressall-tbl-feature"><?php echo esc_html($dpress_tbl_heading_text_three); ?></th>
-                                <th class="dpressall-tbl-price"><?php echo esc_html($dpress_tbl_heading_text_four); ?></th>
+                                <th class="actall-tbl-img" style="color:<?php echo esc_attr($act_tbl_heading_text_color) ?>"><?php echo esc_html($act_tbl_heading_text_one); ?></th>
+                                <th class="actall-tbl-model" style="color:<?php echo esc_attr($act_tbl_heading_text_color) ?>"><?php echo esc_html($act_tbl_heading_text_two); ?></th>
+                                <th class="actall-tbl-feature" style="color:<?php echo esc_attr($act_tbl_heading_text_color) ?>"><?php echo esc_html($act_tbl_heading_text_three); ?></th>
+                                <th class="actall-tbl-price" style="color:<?php echo esc_attr($act_tbl_heading_text_color) ?>"><?php echo esc_html($act_tbl_heading_text_four); ?></th>
                             </tr>
                         </thead>
                         
-                        <tbody class="dpressall-tbl-body">
+                        <tbody class="actall-tbl-body">
                         <?php
-                            $dpresstable_meta_values = get_post_meta(get_the_ID(), 'dprsstable_table_field', true);
-                            //print_r($dpresstable_meta_values);
-                            foreach($dpresstable_meta_values as $table_meta_value){
+                            $acttable_meta_values = get_post_meta(get_the_ID(), 'acttable_table_field', true);
+                            //print_r($acttable_meta_values);
+                            foreach($acttable_meta_values as $table_meta_value){
                         ?>
 
                         <tr>
-                            <td class="dpressall-tbl-colum-one">
+                            <td class="actall-tbl-colum-one">
                             <?php if($table_meta_value['product_tag_text']): ?>
-                            <div class="dpress-table-tag" style="background:<?php echo esc_attr($dpress_tbl_tag_bg_color); ?>">
+                            <div class="act-table-tag" style="background:<?php echo esc_attr($act_tbl_tag_bg_color); ?>">
                                 <span>
                                 <?php echo esc_html($table_meta_value['product_tag_text']); ?>
                                 </span>
                             </div>
                             <?php endif; ?>
-                            <div class="dpressall-pro-img-boxx">
+                            <div class="actall-pro-img-boxx">
                                 <?php
                                     if($table_meta_value['product_image_source_url']):
                                 ?>
@@ -92,19 +92,19 @@ function act_table_main_shortcode($attr){
                             </div>
                             </td>
                             <?php if($table_meta_value['product_tag_text']): ?>
-                            <td class="dpress-table-tag-mobile-label">
-                                <div class="dpress-table-tag-mobile" style="background:<?php echo esc_attr($dpress_tbl_tag_bg_color); ?>">
+                            <td class="act-table-tag-mobile-label">
+                                <div class="act-table-tag-mobile" style="background:<?php echo esc_attr($act_tbl_tag_bg_color); ?>">
                                     <span><?php echo esc_html($table_meta_value['product_tag_text']); ?></span>
                                 </div>
                             </td>
                             <?php endif; ?>
-                            <td class="dpressall-tbl-colum-two">
-                                <a href="<?php echo esc_url($table_meta_value['product_url']); ?>" target="_blank" rel="nofollow" class="dpressall-tbl-pro-title" style="color:<?php echo esc_attr($dpress_tbl_product_title_color); ?>">
+                            <td class="actall-tbl-colum-two">
+                                <a href="<?php echo esc_url($table_meta_value['product_url']); ?>" target="_blank" rel="nofollow" class="actall-tbl-pro-title" style="color:<?php echo esc_attr($act_tbl_product_title_color); ?>">
                                 <?php echo esc_html($table_meta_value['product_name']); ?>
                                 </a>
                             </td>
-                            <td class="dpressall-tbl-colum-three">
-                                <div class="dpressall-table-features">
+                            <td class="actall-tbl-colum-three">
+                                <div class="actall-table-features">
                                     <?php
                                     if($table_meta_value['product_description']):
                                         ?>
@@ -114,18 +114,18 @@ function act_table_main_shortcode($attr){
                                     <?php endif; ?>
                                 </div>
                             </td>
-                            <td class="dpressall-tbl-colum-four">
+                            <td class="actall-tbl-colum-four">
                                 <!-- <?php if($table_meta_value['product_price']): ?>
-                                <span class="dpress-price-small">
+                                <span class="act-price-small">
                                     <?php echo esc_html($table_meta_value['product_price']); ?>
                                 </span>
                                 <?php endif; ?> -->
-                                <a href="<?php echo esc_url($table_meta_value['product_url']); ?>" target="_blank" rel="nofollow" class="btn btn-dpress-tbl-price" style="background: <?php echo esc_attr($dpress_tbl_button_bg_color); ?>; color: <?php echo esc_attr($dpress_tbl_button_text_color); ?>">
+                                <a href="<?php echo esc_url($table_meta_value['product_url']); ?>" target="_blank" rel="nofollow" class="btn btn-act-tbl-price" style="background: <?php echo esc_attr($act_tbl_button_bg_color); ?>; color: <?php echo esc_attr($act_tbl_button_text_color); ?>">
                                 <!-- <span class="btn-content-icon">
                                     <i class="fab fa-amazon"></i>
                                 </span> -->
                                 <span class="btn-content-text">
-                                    <?php echo esc_html($dpress_tbl_btn_text); ?>
+                                    <?php echo esc_html($act_tbl_btn_text); ?>
                                 </span>
                                 </a>
                             </td>

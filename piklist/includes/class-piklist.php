@@ -306,7 +306,7 @@ class Piklist
 
   /**
    * wp_globals
-   * Returns an array with all the standard wordpress globals, protecting the real globals
+   * Returns an array with all the standard woract globals, protecting the real globals
    *
    * @return array
    *
@@ -486,7 +486,7 @@ class Piklist
       {
         if (isset($_wp_globals[$_key]))
         {
-          $trigger_error_message = sprintf(__('is a reserved WordPress global variable and cannot be passed as an argument to %s', 'piklist'), 'piklist::render()');
+          $trigger_error_message = sprintf(__('is a reserved Woract global variable and cannot be passed as an argument to %s', 'piklist'), 'piklist::render()');
 
           trigger_error('$' . $_key . " " . $trigger_error_message, E_USER_WARNING);
         }

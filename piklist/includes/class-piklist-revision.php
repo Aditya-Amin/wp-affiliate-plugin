@@ -95,7 +95,7 @@ class Piklist_Revision
    * Adds a custom field for metadata to the revision ui.
    *
    * @param array $fields The current set of fields for the ui.
-   * @param array $post   Current post data as array. Added in WordPress 4.5.0
+   * @param array $post   Current post data as array. Added in Woract 4.5.0
    *
    * @return array Updated fields.
    *

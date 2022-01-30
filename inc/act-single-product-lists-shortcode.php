@@ -4,7 +4,7 @@ function single_product_list_shortcode($attr){
     ob_start(); ?>
     <div class="act-single-product-list-container">
         <?php
-            $dpresstable_pro_args = new WP_Query(array(
+            $acttable_pro_args = new WP_Query(array(
                 'post_type'             => 'actproduct',
                 'ignore_sticky_posts'   => 1,
                 'orderby' => array( 
@@ -12,18 +12,18 @@ function single_product_list_shortcode($attr){
                 ),
                 'post_status'           => 'publish'
             ));
-            if($dpresstable_pro_args->have_posts()):
+            if($acttable_pro_args->have_posts()):
             
-            while ($dpresstable_pro_args->have_posts()) : $dpresstable_pro_args->the_post();
+            while ($acttable_pro_args->have_posts()) : $acttable_pro_args->the_post();
 
             $product_order = get_post_meta(get_the_ID(), 'act_single_product_order', true);
             $affiliate_url = get_post_meta(get_the_ID(), 'act_single_pro_url', true);
-            $title_text_color = get_post_meta(get_the_ID(), 'dpressall_pro_title_color', true);
-            $title_text_size = get_post_meta(get_the_ID(), 'dpressall_pro_title_size', true);
-            $button_text = get_post_meta(get_the_ID(), 'dpress_pro_button_text', true);
-            $button_bg = get_post_meta(get_the_ID(), 'dpressall_pro_button_bg', true);
-            $button_hover_bg = get_post_meta(get_the_ID(), 'dpressall_pro_button_hover_bg', true);
-            $button_text_size = get_post_meta(get_the_ID(), 'dpressall_pro_button_font_size', true);
+            $title_text_color = get_post_meta(get_the_ID(), 'actall_pro_title_color', true);
+            $title_text_size = get_post_meta(get_the_ID(), 'actall_pro_title_size', true);
+            $button_text = get_post_meta(get_the_ID(), 'act_pro_button_text', true);
+            $button_bg = get_post_meta(get_the_ID(), 'actall_pro_button_bg', true);
+            $button_hover_bg = get_post_meta(get_the_ID(), 'actall_pro_button_hover_bg', true);
+            $button_text_size = get_post_meta(get_the_ID(), 'actall_pro_button_font_size', true);
         ?>
         <div class="act-product-list-item">
             <div class="single-product-header">
@@ -33,7 +33,7 @@ function single_product_list_shortcode($attr){
             <div class="single-product-body">
                 <div class="act-product-img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>); background-position:center; background-size:cover; background-repeat:no-repeat"></div>
                 <div class="buttons" style="text-align: center; margin-top: 30px;">
-                <a href="<?php echo $affiliate_url; ?>" rel="nofollow noopener" class="btn btn-dpress-tbl-price" style="text-align:center;">
+                <a href="<?php echo $affiliate_url; ?>" rel="nofollow noopener" class="btn btn-act-tbl-price" style="text-align:center;">
                     <span class="btn-content-icon"><i class="fab fa-amazon"></i></span>
                     <span><?php echo $button_text; ?></span>
                 </a>

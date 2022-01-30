@@ -12,7 +12,7 @@ Tab: General
     ,'field' => 'meta_queries'
     ,'label' => __('Accelerate meta queries', 'piklist')
     ,'description' => __('May conflict with certain plugins', 'piklist')
-    ,'help' => __('Allow Piklist to speed up all meta queries in WordPress or any plugin.', 'piklist')
+    ,'help' => __('Allow Piklist to speed up all meta queries in Woract or any plugin.', 'piklist')
     ,'choices' => array(
       'true' => __('Allow', 'piklist')
     )

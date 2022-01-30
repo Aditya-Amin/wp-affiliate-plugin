@@ -1436,6 +1436,8 @@
         groups = 0,
         $this = event.data.piklistaddmore;
 
+        console.log(element_indexes.length)
+
       for (var j = element_indexes.length - 1; j >= 0; j--)
       {
         if ($.isNumeric(element_indexes[j]))
@@ -2179,7 +2181,7 @@
 
 
   /* --------------------------------------------------------------------------------
-    WordPress Updates
+    Woract Updates
   -------------------------------------------------------------------------------- */
 
   // NOTE: Allow dynamically added editors to work properly with added buttons

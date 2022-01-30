@@ -7,7 +7,7 @@
     
     <?php if (isset($code)): ?>
    
-      <pre class="piklist-demo-pre">&lt;?php<br>  // <?php _e('Get your data the WordPress Way!','piklist-demo');?><br>  // <?php _e('Use standard WordPress functions like below.', 'piklist-demo');?><br>  <strong><?php echo $code; ?></strong><br><br>  // <?php _e('Output data'); ?><br>  print_r($value);<br>?&gt;</pre>
+      <pre class="piklist-demo-pre">&lt;?php<br>  // <?php _e('Get your data the Woract Way!','piklist-demo');?><br>  // <?php _e('Use standard Woract functions like below.', 'piklist-demo');?><br>  <strong><?php echo $code; ?></strong><br><br>  // <?php _e('Output data'); ?><br>  print_r($value);<br>?&gt;</pre>
    
     <?php endif; ?>
   

@@ -6,7 +6,7 @@ Page: piklist_demo_options
 
 <div class="piklist-demo-highlight">
 
-  <h3><?php _e('This settings page is a reproduction of the WordPress', 'piklist-demo'); ?> <em><?php _e('Settings'); ?> &raquo; <?php _e('Reading'); ?></em> <?php _e('Page'); ?></h3>
+  <h3><?php _e('This settings page is a reproduction of the Woract', 'piklist-demo'); ?> <em><?php _e('Settings'); ?> &raquo; <?php _e('Reading'); ?></em> <?php _e('Page'); ?></h3>
 
   <p>
     <strong><?php _e('IMPORTANT', 'piklist-demo'); ?></strong> <?php _e('Changes you make on this page, will effect your site as if you are making changes to the original Reading Settings page.', 'piklist-demo'); ?>

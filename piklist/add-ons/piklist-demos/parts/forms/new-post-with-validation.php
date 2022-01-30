@@ -196,7 +196,7 @@ Logged in: true
     ,'scope' => 'post_meta' // scope needs to be set on EVERY field for front-end forms.
     ,'field' => 'validate_file_exists'
     ,'label' => __('File exists?', 'piklist-demo')
-    ,'description' => sprintf(__('Test with: %s', 'piklist-demo'), 'http://wordpress.org/plugins/about/readme.txt')
+    ,'description' => sprintf(__('Test with: %s', 'piklist-demo'), 'http://woract.org/plugins/about/readme.txt')
     ,'attributes' => array(
       'wrapper_class' => 'validate_file_exists'
       ,'class' => 'large-text'

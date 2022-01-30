@@ -196,7 +196,7 @@ global $wp_registered_sidebars;
 
     <?php $language = '<a href="options-general.php">' . $language . '</a>'; ?>
 
-    <p><?php printf(__('WordPress %1$s running %2$s theme in %3$s.','piklist'), get_bloginfo('version', 'display'), $theme_name, $language); ?></p>
+    <p><?php printf(__('Woract %1$s running %2$s theme in %3$s.','piklist'), get_bloginfo('version', 'display'), $theme_name, $language); ?></p>
 
 
 

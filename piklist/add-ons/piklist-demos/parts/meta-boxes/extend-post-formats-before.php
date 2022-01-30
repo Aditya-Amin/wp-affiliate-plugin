@@ -13,7 +13,7 @@ Extend Method: before
 <div class="piklist-demo-highlight">
 
   <p>
-    <?php _e('This is the default WordPress Post Formats meta box, extended by Piklist, changing three things: ', 'piklist-demo');?>
+    <?php _e('This is the default Woract Post Formats meta box, extended by Piklist, changing three things: ', 'piklist-demo');?>
   </p>
 
   <ol>

@@ -1128,7 +1128,7 @@
 
 
   /* --------------------------------------------------------------------------------
-    WordPress Updates
+    Woract Updates
   -------------------------------------------------------------------------------- */
 
   // NOTE: Allow meta boxes and widgets to have tinymce
@@ -1163,7 +1163,7 @@
 
 
   /* --------------------------------------------------------------------------------
-    WP Tabs - Updates or enhancements to existing WordPress Functionality
+    WP Tabs - Updates or enhancements to existing Woract Functionality
   -------------------------------------------------------------------------------- */
 
   var WPTabs = function(element, options)

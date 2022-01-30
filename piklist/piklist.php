@@ -2,7 +2,7 @@
 /*
 Plugin Name: Piklist
 Plugin URI: https://piklist.com
-Description: The most powerful framework available for WordPress.
+Description: The most powerful framework available for Woract.
 Version: 1.0.12
 Author: Piklist
 Author URI: https://piklist.com

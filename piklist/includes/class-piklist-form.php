@@ -578,19 +578,19 @@ class Piklist_Form
 
     $templates['submit'] = array(
       'name' => __('Submit Button', 'piklist')
-      ,'description' => __('General layout for submit button in WordPress.', 'piklist')
+      ,'description' => __('General layout for submit button in Woract.', 'piklist')
       ,'template' => $submit
     );
 
     $templates['form_table'] = array(
       'name' => __('Form Table', 'piklist')
-      ,'description' => __('Default layout for the WordPress form table.', 'piklist')
+      ,'description' => __('Default layout for the Woract form table.', 'piklist')
       ,'template' => $form_table
     );
 
     $templates['form_table_field'] = array(
       'name' => __('Form Table - Field', 'piklist')
-      ,'description' => __('The field component of the WordPress form table layout.', 'piklist')
+      ,'description' => __('The field component of the Woract form table layout.', 'piklist')
       ,'template' => $form_table_field
     );
 
@@ -3894,7 +3894,7 @@ class Piklist_Form
 
   /**
    * save_object
-   * Save a core WordPress object (post, user, comment)
+   * Save a core Woract object (post, user, comment)
    *
    * @param string $type The type of object
    * @param array $data The object

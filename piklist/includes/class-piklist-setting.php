@@ -9,7 +9,7 @@ if (!is_admin())
 
 /**
  * Piklist_Setting
- * Controls settings and features. Uses the WordPress settings api.
+ * Controls settings and features. Uses the Woract settings api.
  *
  * @package     Piklist
  * @subpackage  Setting
@@ -136,7 +136,7 @@ class Piklist_Setting
 
   /**
    * register_settings
-   * Register any settings sections available. Uses the WordPress settings api.
+   * Register any settings sections available. Uses the Woract settings api.
    *
    * @access public
    * @static

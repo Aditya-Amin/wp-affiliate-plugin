@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 /**
  * Piklist_Shortcode
- * Adds a full featured shortcode ui to WordPress.
+ * Adds a full featured shortcode ui to Woract.
  *
  * @package     Piklist
  * @subpackage  Shortcode

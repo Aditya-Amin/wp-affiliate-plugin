@@ -3,16 +3,16 @@
 if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 /**
- * Piklist_WordPress
- * Modifications and upgrades to WordPress, most of these are fixes for some of the inconsistencies in WordPress.
+ * Piklist_Woract
+ * Modifications and upgrades to Woract, most of these are fixes for some of the inconsistencies in Woract.
  *
  * @package     Piklist
- * @subpackage  WordPress
+ * @subpackage  Woract
  * @copyright   Copyright (c) 2012-2018, Piklist, LLC.
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
  * @since       1.0
  */
-class Piklist_WordPress
+class Piklist_Woract
 {
   /**
    * @var string The user query relation.
@@ -96,15 +96,15 @@ class Piklist_WordPress
    */
   public static function _construct()
   {
-    add_action('pre_user_query', array('piklist_wordpress', 'pre_user_query'));
-    add_action('posts_where', array('piklist_wordpress', 'relation_taxonomy'));
-    add_action('wp_scheduled_delete', array('piklist_wordpress', 'garbage_collection'));
-    add_action('pre_get_posts', array('piklist_wordpress', 'pre_get_posts'));
-    add_action('piklist_pre_render_workflow', array('piklist_wordpress', 'pre_render_workflow'));
+    add_action('pre_user_query', array('piklist_woract', 'pre_user_query'));
+    add_action('posts_where', array('piklist_woract', 'relation_taxonomy'));
+    add_action('wp_scheduled_delete', array('piklist_woract', 'garbage_collection'));
+    add_action('pre_get_posts', array('piklist_woract', 'pre_get_posts'));
+    add_action('piklist_pre_render_workflow', array('piklist_woract', 'pre_render_workflow'));
 
-    add_filter('piklist_part_data', array('piklist_wordpress', 'part_data'), 10, 2);
-    add_filter('piklist_part_data_parameter', array('piklist_wordpress', 'piklist_part_data_parameter'), 10, 2);
-    add_filter('get_meta_sql', array('piklist_wordpress', 'get_meta_sql'), 101, 6);
+    add_filter('piklist_part_data', array('piklist_woract', 'part_data'), 10, 2);
+    add_filter('piklist_part_data_parameter', array('piklist_woract', 'piklist_part_data_parameter'), 10, 2);
+    add_filter('get_meta_sql', array('piklist_woract', 'get_meta_sql'), 101, 6);
   }
 
   /**
@@ -132,7 +132,7 @@ class Piklist_WordPress
 
   /**
    * get_meta_sql
-   * Seperate meta queries instead of using a table JOIN. https://core.trac.wordpress.org/ticket/30044
+   * Seperate meta queries instead of using a table JOIN. https://core.trac.woract.org/ticket/30044
    *
    * @param array $sql The current constructed sql queries.
    * @param object $query The query object.
@@ -251,11 +251,11 @@ class Piklist_WordPress
 
       $query->query_vars['role'] = null;
 
-      remove_action('pre_user_query', array('piklist_wordpress', 'pre_user_query'));
+      remove_action('pre_user_query', array('piklist_woract', 'pre_user_query'));
 
       $query->prepare_query();
 
-      add_action('pre_user_query', array('piklist_wordpress', 'pre_user_query'));
+      add_action('pre_user_query', array('piklist_woract', 'pre_user_query'));
     }
   }
 
@@ -418,10 +418,10 @@ class Piklist_WordPress
           {
             case 'post':
 
-              add_filter('posts_where', array('piklist_wordpress', 'where'), 10, 2);
-              add_filter('posts_where_request', array('piklist_wordpress', 'where'), 10, 2);
-              add_filter('posts_orderby', array('piklist_wordpress', 'orderby'), 10, 2);
-              add_filter('posts_orderby_request', array('piklist_wordpress', 'orderby'), 10, 2);
+              add_filter('posts_where', array('piklist_woract', 'where'), 10, 2);
+              add_filter('posts_where_request', array('piklist_woract', 'where'), 10, 2);
+              add_filter('posts_orderby', array('piklist_woract', 'orderby'), 10, 2);
+              add_filter('posts_orderby_request', array('piklist_woract', 'orderby'), 10, 2);
 
             break;
           }
@@ -507,8 +507,8 @@ class Piklist_WordPress
         {
           case 'post':
 
-            add_filter('posts_distinct', array('piklist_wordpress', 'distinct'), 10, 2);
-            add_filter('posts_distinct_request', array('piklist_wordpress', 'distinct'), 10, 2);
+            add_filter('posts_distinct', array('piklist_woract', 'distinct'), 10, 2);
+            add_filter('posts_distinct_request', array('piklist_woract', 'distinct'), 10, 2);
 
           break;
         }
@@ -533,8 +533,8 @@ class Piklist_WordPress
    */
   public static function where($where, $query)
   {
-    remove_filter('posts_where', array('piklist_wordpress', 'where'), 10);
-    remove_filter('posts_where_request', array('piklist_wordpress', 'where'), 10);
+    remove_filter('posts_where', array('piklist_woract', 'where'), 10);
+    remove_filter('posts_where_request', array('piklist_woract', 'where'), 10);
 
     if (!empty(self::$meta_orderby) && (!isset($query->query_vars['orderby']) || (in_array($query->query_vars['orderby'], array('meta_value', 'meta_value_num')))))
     {
@@ -559,8 +559,8 @@ class Piklist_WordPress
    */
   public static function orderby($orderby, $query)
   {
-    remove_filter('posts_orderby', array('piklist_wordpress', 'orderby'), 10);
-    remove_filter('posts_orderby_request', array('piklist_wordpress', 'orderby'), 10);
+    remove_filter('posts_orderby', array('piklist_woract', 'orderby'), 10);
+    remove_filter('posts_orderby_request', array('piklist_woract', 'orderby'), 10);
 
     if (isset($query->query_vars['orderby']) && !isset($query->query_vars['meta_type']) && in_array($query->query_vars['orderby'], array('meta_value', 'meta_value_num')))
     {
@@ -585,8 +585,8 @@ class Piklist_WordPress
    */
   public static function distinct($distinct, $query)
   {
-    remove_filter('posts_distinct', array('piklist_wordpress', 'distinct'), 10);
-    remove_filter('posts_distinct_request', array('piklist_wordpress', 'distinct'), 10);
+    remove_filter('posts_distinct', array('piklist_woract', 'distinct'), 10);
+    remove_filter('posts_distinct_request', array('piklist_woract', 'distinct'), 10);
 
     return 'DISTINCT';
   }
@@ -702,7 +702,7 @@ class Piklist_WordPress
 
       if ($type)
       {
-        piklist::render('shared/wordpress-form-hide', array(
+        piklist::render('shared/woract-form-hide', array(
           'type' => $type
         ));
       }

@@ -11,7 +11,7 @@ Flow: Demo Workflow
 
 
 <div class="piklist-demo-highlight">
-  <?php _e('WordPress ColorPicker fields are super simple to create. Piklist handles all the Javascript.', 'piklist-demo');?>
+  <?php _e('Woract ColorPicker fields are super simple to create. Piklist handles all the Javascript.', 'piklist-demo');?>
 </div>
 
 <?php

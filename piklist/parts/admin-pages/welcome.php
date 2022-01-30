@@ -8,7 +8,7 @@ Page: piklist
 
 <h1><?php echo __('Welcome to Piklist','piklist') . '&nbsp;'  . piklist::$version; ?></h1>
 
-<div class="about-text"><?php _e('The most powerful framework available for WordPress.','piklist'); ?></div>
+<div class="about-text"><?php _e('The most powerful framework available for Woract.','piklist'); ?></div>
 
 <div class="piklist-badge">
   <?php printf(__('%sP%sIKLIST%s','piklist'),'<span>','</span>','<br>');?>
@@ -80,7 +80,7 @@ Page: piklist
     <div>
       <h3><?php _e('Post relationships', 'piklist');?></h3>
       <h4><?php _e('You\'ll wish all relationships were this easy.','piklist');?></h4>
-      <p><?php printf(__('Post relationships are standard with Piklist and easy to setup. Displaying them in your theme is even easier, since you can use the standard WordPress %sget_posts%s function.','piklist'),'<code>','</code>');?></p>
+      <p><?php printf(__('Post relationships are standard with Piklist and easy to setup. Displaying them in your theme is even easier, since you can use the standard Woract %sget_posts%s function.','piklist'),'<code>','</code>');?></p>
     </div>
     <div class="last-feature about-colors-img">
       <img class="screenshot" src="<?php echo plugins_url('piklist/parts/img/post-relationships@2x.jpg');?>">
@@ -125,7 +125,7 @@ Page: piklist
     <div class="alt-feature">
       <h3><?php _e('Multiple user roles','piklist');?></h3>
       <h4><?php _e('Better security, more flexibility.','piklist');?></h4>
-      <p><?php _e('Powerful web sites and applications require multiple user roles and Piklist supports this out of the box. Standard WordPress functions can be used to validate a user\'s permissions and provide appropriate access to data.','piklist');?></p>
+      <p><?php _e('Powerful web sites and applications require multiple user roles and Piklist supports this out of the box. Standard Woract functions can be used to validate a user\'s permissions and provide appropriate access to data.','piklist');?></p>
     </div>
     <div class="last-feature about-colors-img">
       <img class="screenshot" src="<?php echo plugins_url('piklist/parts/img/user-roles@2x.jpg');?>">
@@ -161,7 +161,7 @@ Page: piklist
     <div class="col-3 last-feature">
       <h3><?php _e('Sanitize before saving','piklist');?></h3>
         <ul>
-          <li><?php _e('Use WordPress sanitization functions.','piklist');?></li>
+          <li><?php _e('Use Woract sanitization functions.','piklist');?></li>
           <li><?php _e('Create your own.','piklist');?></li>
         </ul>
     </div>
@@ -175,7 +175,7 @@ Page: piklist
 
 
 <div class="section">
-  <h2 class="about-headline-callout"><?php _e('Customize everything in WordPress.','piklist');?></h2>
+  <h2 class="about-headline-callout"><?php _e('Customize everything in Woract.','piklist');?></h2>
   <p class="about-description"><?php _e('Post Types, Taxonomies, User Profiles, Settings, Admin Pages, Widgets, Dashboard, Contextual Help, and more...','piklist');?></p>
 
   <div class="feature-section col three-col">
@@ -288,18 +288,18 @@ Page: piklist
 <ul class="wp-people-group " id="wp-people-group-project-leaders">
 
 <li class="wp-person" id="wp-person-miller">
-  <a href="http://profiles.wordpress.org/p51labs/">
+  <a href="http://profiles.woract.org/p51labs/">
     <img src="http://0.gravatar.com/avatar/ed33891ef54d14d71cee542af5c64aa3?s=60" style="padding:0 5px 5px 0;" class="gravatar" alt="Kevin Miller" />
   </a>
-  <a class="web" href="http://profiles.wordpress.org/p51labs/">Kevin Miller</a>
+  <a class="web" href="http://profiles.woract.org/p51labs/">Kevin Miller</a>
   <span class="title"><?php _e('Lead Developer','piklist');?></span>
 </li>
 
 <li class="wp-person" id="wp-person-bruner">
-  <a href="http://profiles.wordpress.org/sbruner">
+  <a href="http://profiles.woract.org/sbruner">
     <img src="http://www.gravatar.com/avatar/909371185bf3c3cd783b9580f394bd7f?s=60" class="gravatar" alt="Steve Bruner" />
     </a>
-  <a class="web" href="http://profiles.wordpress.org/sbruner">Steve Bruner</a>
+  <a class="web" href="http://profiles.woract.org/sbruner">Steve Bruner</a>
   <span class="title"><?php _e('Lead Developer','piklist');?></span>
 </li>
 

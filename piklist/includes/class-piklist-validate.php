@@ -1077,7 +1077,7 @@ class Piklist_Validate
    * validate_email_exists
    * Check if a email is already registered to another user
    *
-   * Uses the WordPress function email_exists()
+   * Uses the Woract function email_exists()
    *
    * @param int $index The field index being checked.
    * @param mixed $value The value of the field.
@@ -1141,7 +1141,7 @@ class Piklist_Validate
    * validate_hex_color
    * Validate if a value is a valid hex color
    *
-   * Uses the WordPress function sanitize_hex_color to sanitize the value and compare.
+   * Uses the Woract function sanitize_hex_color to sanitize the value and compare.
    *
    * @param int $index The field index being checked.
    * @param mixed $value The value of the field.
@@ -1313,7 +1313,7 @@ class Piklist_Validate
   /**
    * validate_username_exists
    * Check if a username already exists
-   * Uses the WordPress function username_exists()
+   * Uses the Woract function username_exists()
    *
    * @param int $index The field index being checked.
    * @param mixed $value The value of the field.
@@ -1463,7 +1463,7 @@ class Piklist_Validate
   /**
    * sanitize_email
    * Strips out all characters that are not allowable in an email address.
-   * Uses the WordPress function sanitize_email().
+   * Uses the Woract function sanitize_email().
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1487,7 +1487,7 @@ class Piklist_Validate
    * -Removes special characters requiring special escaping to manipulate at the command line.
    * -Replaces spaces and consecutive dashes with a single dash.
    * -Trims period, dash and underscore from beginning and end of filename
-   * Uses the WordPress function sanitize_file_name()
+   * Uses the Woract function sanitize_file_name()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1507,7 +1507,7 @@ class Piklist_Validate
   /**
    * sanitize_html_class
    * Sanitizes a html classname to ensure it only contains valid characters.
-   * Uses the WordPress function sanitize_html_class()
+   * Uses the Woract function sanitize_html_class()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1533,7 +1533,7 @@ class Piklist_Validate
   /**
    * sanitize_text_field
    * Sanitize a string from user input.
-   * Uses the WordPress function sanitize_text_field()
+   * Uses the Woract function sanitize_text_field()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1554,7 +1554,7 @@ class Piklist_Validate
    * sanitize_title
    * -HTML and PHP tags are stripped
    * -Accents are removed (accented characters are replaced with non-accented equivalents).
-   * Uses the WordPress function sanitize_title();
+   * Uses the Woract function sanitize_title();
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1580,7 +1580,7 @@ class Piklist_Validate
   /**
    * sanitize_user
    * Sanitize username stripping out unsafe characters.
-   * Uses WordPress function sanitize_user()
+   * Uses Woract function sanitize_user()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1606,7 +1606,7 @@ class Piklist_Validate
   /**
    * sanitize_wp_kses
    * Makes sure that only the allowed HTML element names, attribute names and attribute values plus only sane HTML entities will occur in $string.
-   * Uses the WordPress function wp_kses()
+   * Uses the Woract function wp_kses()
    *
    * accepts
    * array allowed_html
@@ -1636,7 +1636,7 @@ class Piklist_Validate
   /**
    * sanitize_wp_kses_post
    * Sanitize content for allowed HTML tags for post content.
-   * Uses the WordPress function wp_kses_post()
+   * Uses the Woract function wp_kses_post()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1656,7 +1656,7 @@ class Piklist_Validate
   /**
    * sanitize_wp_filter_kses
    * Sanitize content with allowed HTML Kses rules.
-   * Uses the WordPress function wp_kses_data()
+   * Uses the Woract function wp_kses_data()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.
@@ -1676,7 +1676,7 @@ class Piklist_Validate
   /**
    * sanitize_wp_strip_all_tags
    * Properly strip all HTML tags including script and style.
-   * Uses the WordPress function wp_strip_all_tags()
+   * Uses the Woract function wp_strip_all_tags()
    *
    * @param mixed $value The value of the field.
    * @param array $options The options.

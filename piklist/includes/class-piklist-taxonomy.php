@@ -49,7 +49,7 @@ class Piklist_Taxonomy
     add_filter('sanitize_user', array('piklist_taxonomy', 'restrict_username'));
     add_filter('piklist_meta_tables_sort', array('piklist_taxonomy', 'piklist_meta_tables_sort'));
 
-    // Load before termmeta was native to WordPress
+    // Load before termmeta was native to Woract
     if ( version_compare($wp_version, '4.4.0', '<') )
     {
       add_filter('init', array('piklist_taxonomy', 'register_tables'));

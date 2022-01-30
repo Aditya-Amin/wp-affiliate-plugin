@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: add-ons/piklist-demos/parts/admin-pages/reading-settings.php:9
-msgid "This settings page is a reproduction of the WordPress"
+msgid "This settings page is a reproduction of the Woract"
 msgstr ""
 
 #: add-ons/piklist-demos/parts/admin-pages/reading-settings.php:9
@@ -1453,7 +1453,7 @@ msgstr ""
 #: add-ons/piklist-demos/parts/terms/field-colorpicker.php:12
 #: add-ons/piklist-demos/parts/users/field-colorpicker.php:11
 msgid ""
-"WordPress ColorPicker fields are super simple to create. Piklist handles all "
+"Woract ColorPicker fields are super simple to create. Piklist handles all "
 "the Javascript."
 msgstr ""
 
@@ -2319,7 +2319,7 @@ msgstr ""
 #: add-ons/piklist-demos/parts/users/field-upload.php:17
 msgid ""
 "Piklist comes standard with two upload fields: Basic and Media. The Media "
-"field works just like the standard WordPress media field, while the Basic "
+"field works just like the standard Woract media field, while the Basic "
 "uploader is great for simple forms."
 msgstr ""
 
@@ -2354,7 +2354,7 @@ msgstr ""
 
 #: add-ons/piklist-demos/parts/meta-boxes/extend-post-formats-before.php:16
 msgid ""
-"This is the default WordPress Post Formats meta box, extended by Piklist, "
+"This is the default Woract Post Formats meta box, extended by Piklist, "
 "changing three things: "
 msgstr ""
 
@@ -2405,14 +2405,14 @@ msgstr ""
 #, php-format
 msgid ""
 "You can remove the left label when displaying the editor by defining %1$s in "
-"the field parameters. This will make it look like the default WordPress "
-"editor. To learn about replacing the WordPress editor %2$sread our Tutorial"
+"the field parameters. This will make it look like the default Woract "
+"editor. To learn about replacing the Woract editor %2$sread our Tutorial"
 "%3$s."
 msgstr ""
 
 #: add-ons/piklist-demos/parts/meta-boxes/field-featured-image.php:15
 msgid ""
-"With Piklist you can easily replicate the WordPress Featured Image field, "
+"With Piklist you can easily replicate the Woract Featured Image field, "
 "with an added bonus. Piklist allows you to use multiple featured images."
 msgstr ""
 
@@ -2524,11 +2524,11 @@ msgid "Get value"
 msgstr ""
 
 #: add-ons/piklist-demos/parts/shared/field-value.php:10
-msgid "Get your data the WordPress Way!"
+msgid "Get your data the Woract Way!"
 msgstr ""
 
 #: add-ons/piklist-demos/parts/shared/field-value.php:10
-msgid "Use standard WordPress functions like below."
+msgid "Use standard Woract functions like below."
 msgstr ""
 
 #: add-ons/piklist-demos/parts/shared/field-value.php:10
@@ -2800,9 +2800,9 @@ msgstr ""
 #: add-ons/piklist-demos/parts/workflows/demo-common-editor.php:14
 #, php-format
 msgid ""
-"The WordPress post editor can be placed anywhere you like, since Piklist "
+"The Woract post editor can be placed anywhere you like, since Piklist "
 "treats it like any other field. Multiple editors can be used per page, and "
-"you can even %1$sreplace the default WordPress editor%2$s with you own."
+"you can even %1$sreplace the default Woract editor%2$s with you own."
 msgstr ""
 
 #: add-ons/piklist-demos/parts/workflows/demo-common-lists.php:12
@@ -2825,13 +2825,13 @@ msgid "Hide, show or update a field, based on the state of another field"
 msgstr ""
 
 #: add-ons/piklist-demos/parts/workflows/demo-extend.php:13
-msgid "Take control of WordPress, and even third-party plugins."
+msgid "Take control of Woract, and even third-party plugins."
 msgstr ""
 
 #: add-ons/piklist-demos/parts/workflows/demo-extend.php:16
 msgid ""
 "With Piklist you can \"extend\" ANY meta-box, settings section, etc. Whether "
-"it was created by Piklist, WordPress or another plugin."
+"it was created by Piklist, Woract or another plugin."
 msgstr ""
 
 #: add-ons/piklist-demos/parts/workflows/demo-header.php:21
@@ -3107,7 +3107,7 @@ msgid "Submit Button"
 msgstr ""
 
 #: includes/class-piklist-form.php:581
-msgid "General layout for submit button in WordPress."
+msgid "General layout for submit button in Woract."
 msgstr ""
 
 #: includes/class-piklist-form.php:586
@@ -3115,7 +3115,7 @@ msgid "Form Table"
 msgstr ""
 
 #: includes/class-piklist-form.php:587
-msgid "Default layout for the WordPress form table."
+msgid "Default layout for the Woract form table."
 msgstr ""
 
 #: includes/class-piklist-form.php:592
@@ -3123,7 +3123,7 @@ msgid "Form Table - Field"
 msgstr ""
 
 #: includes/class-piklist-form.php:593
-msgid "The field component of the WordPress form table layout."
+msgid "The field component of the Woract form table layout."
 msgstr ""
 
 #: includes/class-piklist-form.php:598
@@ -3588,7 +3588,7 @@ msgstr ""
 #: includes/class-piklist.php:489
 #, php-format
 msgid ""
-"is a reserved WordPress global variable and cannot be passed as an argument "
+"is a reserved Woract global variable and cannot be passed as an argument "
 "to %s"
 msgstr ""
 
@@ -3686,7 +3686,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 #: parts/admin-pages/welcome.php:11
-msgid "The most powerful framework available for WordPress."
+msgid "The most powerful framework available for Woract."
 msgstr ""
 
 #: parts/admin-pages/welcome.php:14
@@ -3727,7 +3727,7 @@ msgstr ""
 #, php-format
 msgid ""
 "Post relationships are standard with Piklist and easy to setup. Displaying "
-"them in your theme is even easier, since you can use the standard WordPress "
+"them in your theme is even easier, since you can use the standard Woract "
 "%sget_posts%s function."
 msgstr ""
 
@@ -3772,7 +3772,7 @@ msgstr ""
 #: parts/admin-pages/welcome.php:128
 msgid ""
 "Powerful web sites and applications require multiple user roles and Piklist "
-"supports this out of the box. Standard WordPress functions can be used to "
+"supports this out of the box. Standard Woract functions can be used to "
 "validate a user's permissions and provide appropriate access to data."
 msgstr ""
 
@@ -3819,7 +3819,7 @@ msgid "Sanitize before saving"
 msgstr ""
 
 #: parts/admin-pages/welcome.php:164
-msgid "Use WordPress sanitization functions."
+msgid "Use Woract sanitization functions."
 msgstr ""
 
 #: parts/admin-pages/welcome.php:165
@@ -3827,7 +3827,7 @@ msgid "Create your own."
 msgstr ""
 
 #: parts/admin-pages/welcome.php:178
-msgid "Customize everything in WordPress."
+msgid "Customize everything in Woract."
 msgstr ""
 
 #: parts/admin-pages/welcome.php:179
@@ -4040,7 +4040,7 @@ msgstr ""
 
 #: parts/dashboard/dashboard-right-now.php:199
 #, php-format
-msgid "WordPress %1$s running %2$s theme in %3$s."
+msgid "Woract %1$s running %2$s theme in %3$s."
 msgstr ""
 
 #: parts/dashboard/dashboard-right-now.php:205
@@ -4116,7 +4116,7 @@ msgid "May conflict with certain plugins"
 msgstr ""
 
 #: parts/settings/enhancements.php:15
-msgid "Allow Piklist to speed up all meta queries in WordPress or any plugin."
+msgid "Allow Piklist to speed up all meta queries in Woract or any plugin."
 msgstr ""
 
 #: parts/settings/enhancements.php:17 parts/settings/forms.php:16
@@ -4218,7 +4218,7 @@ msgstr ""
 #, php-format
 msgid ""
 "2. If you are not ready to make these changes, then STOP. Delete this "
-"version of Piklist, %1$s download the old version%2$s from WordPress.org, "
+"version of Piklist, %1$s download the old version%2$s from Woract.org, "
 "and install it. Use it until you are ready to do the upgrade."
 msgstr ""
 

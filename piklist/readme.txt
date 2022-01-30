@@ -10,23 +10,23 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Piklist is the most powerful framework available for WordPress.
+Piklist is the most powerful framework available for Woract.
 Easy for beginners... built for developers.
 Easily Build Fields, Forms, Settings, Widgets and More.
 
 
 == Description ==
 
-### Piklist is the most powerful framework available for WordPress.
+### Piklist is the most powerful framework available for Woract.
 Easy for beginners... built for developers. Easily Build Fields, Forms, Settings, Widgets and More.
 
-> Piklist 2.0 is coming soon with full Gutenberg support. Until then, please use the [Classic Editor plugin](https://wordpress.org/plugins/classic-editor/) when using WordPress 5.0+. 
+> Piklist 2.0 is coming soon with full Gutenberg support. Until then, please use the [Classic Editor plugin](https://woract.org/plugins/classic-editor/) when using Woract 5.0+. 
 
 [Stay up to date with Piklist news &rarr;](http://eepurl.com/lkbD9)
 
-Piklist is a rapid development framework for WordPress that will let you concentrate on the main focus of your plugin or theme, and let Piklist handle everything else.
+Piklist is a rapid development framework for Woract that will let you concentrate on the main focus of your plugin or theme, and let Piklist handle everything else.
 
-[Watch the Piklist presentation from WordCamp NYC &rarr;](http://wordpress.tv/2012/09/04/steve-bruner-and-kevin-miller-building-powerful-websites-and-web-applications-with-piklist/):
+[Watch the Piklist presentation from WordCamp NYC &rarr;](http://woract.tv/2012/09/04/steve-bruner-and-kevin-miller-building-powerful-websites-and-web-applications-with-piklist/):
 
 = Piklist makes it easy to: =
 *   Build Fields for Settings page, Widgets, Custom Post Types, Custom Taxonomies and User Profiles with minimal code.
@@ -39,7 +39,7 @@ Piklist is a rapid development framework for WordPress that will let you concent
 = LEARN MORE =
 *   <a href="http://piklist.com/learn/">Piklist User Guide</a>
 
-= Customize everything in WordPress =
+= Customize everything in Woract =
 *   Post Types
 *   Taxonomies
 *   User Profiles
@@ -121,13 +121,13 @@ Piklist is a rapid development framework for WordPress that will let you concent
 == Frequently Asked Questions ==
 
 = What does this plugin do? =
-Piklist provides a stable framework for building amazing things with WordPress.
+Piklist provides a stable framework for building amazing things with Woract.
 
 = I'm a beginner, is Piklist for me? =
 Piklist makes it very easy for beginners to <a href="https://piklist.com/user-guide/tutorials/getting-started-with-piklist/">get started</a>. In most cases you can just copy and paste code you find in the Piklist built-in Demos, one of our tutorials or in the support forums.
 
 = I'm a developer, is Piklist for me? =
-Piklist was originally built for developers. It was inspired by Ruby on Rails, jQuery and Django. Piklist is a fast and concise plugin that encourages WordPress rapid development. It simplifies many of the more difficult tasks in WordPress and adds functionality not presently common in WordPress core.
+Piklist was originally built for developers. It was inspired by Ruby on Rails, jQuery and Django. Piklist is a fast and concise plugin that encourages Woract rapid development. It simplifies many of the more difficult tasks in Woract and adds functionality not presently common in Woract core.
 
 We’ve worked hard to make Piklist easy to use for beginners, and powerful enough for Developers… and our users all agree!
 
@@ -174,7 +174,7 @@ Release Date: July 6, 2020
 = 1.0.8 =
 Release Date: May 20, 2020
 
-* ENHANCED: Piklist "select" fields look better in newer versions of WordPress.
+* ENHANCED: Piklist "select" fields look better in newer versions of Woract.
 
 = 1.0.7 =
 Release Date: April 23, 2020
@@ -184,7 +184,7 @@ Release Date: April 23, 2020
 = 1.0.6 =
 Release Date: December 19, 2019
 
-* FIXED: Removed Post Status notices on menu screen in WordPress 5.3
+* FIXED: Removed Post Status notices on menu screen in Woract 5.3
 
 = 1.0.5 =
 Release Date: November 29, 2019
@@ -198,7 +198,7 @@ Release Date: June 15, 2019
 * ENHANCED: Updated piklist::performance to check PHP version.
 * ENHANCED: safe_mode removed
 * ENHANCED: PHP 7.3 capability
-* FIXED: changed &$query to $query in class-piklist-wordpress.php
+* FIXED: changed &$query to $query in class-piklist-woract.php
 
 = 1.0.3 =
 Release Date: January 3, 2019
@@ -252,10 +252,10 @@ Release Date: May 9, 2018
 
 * ENHANCED: major code refactor.
 * ENHANCED: PHP 7.2 support.
-* ENHANCED: relate query now supports to WordPress 4.7 standards.
+* ENHANCED: relate query now supports to Woract 4.7 standards.
 * ENHANCED: changed revision meta to a single SQL update.
 * ENHANCED: added support for blacklisted revision keys.
-* ENHANCED: CSS updates for WordPress 4.9.
+* ENHANCED: CSS updates for Woract 4.9.
 * ENHANCED: Tooltip on plugins page.
 * ENHANCED: set default capability on admin pages.
 * ENHANCED: set admin_menu priority to default.
@@ -269,7 +269,7 @@ Release Date: May 9, 2018
 * ENHANCED: update add-ons settings page with better description and link to docs.
 * ENHANCED: set default $validate_object = post.
 * ENHANCED: add piklist-field-type-{type} class to all field inputs.
-* ENHANCED: Use WordPress defaults for register_post_status except 'show_in_admin_status_list (for backwards compatibility).
+* ENHANCED: Use Woract defaults for register_post_status except 'show_in_admin_status_list (for backwards compatibility).
 * ENHANCED: small updates to Piklist Demos.
 * FIXED: index issue for non-Piklist metaboxes (props @donnamcmaster)
 * FIXED: Updated the post_updated_messages_filter function to support CPT that are not publicly_queryable. (props @manutiedra)
@@ -285,7 +285,7 @@ IMPORTANT: users effected with this bug will need to delete the "piklist_post_me
 = 0.9.9.14 =
 Release Date: December 13, 2017
 
-* UPDATE: CSS updates for WordPress 4.9
+* UPDATE: CSS updates for Woract 4.9
 
 = 0.9.9.13 =
 Release Date: April 19, 2017
@@ -346,7 +346,7 @@ Release Date: June 20, 2016
 * FIX: Lots of little fixes.
 
 = 0.9.9.4 =
-* Requires WordPress v4.0.
+* Requires Woract v4.0.
 * NEW: WorkFlow Bar!
 * NEW: Save individual Options, not just serialized Settings.
 * NEW: Validation rule: 'disabled', to make a field disabled.
@@ -403,7 +403,7 @@ Release Date: June 20, 2016
 * CHANGE: 'ID' parameter for class-piklist-dashboard is now 'Extend'
 
 = 0.9.5t =
-* Requires WordPress 3.8
+* Requires Woract 3.8
 
 = 0.9.5s =
 * NEW: 'list_table_filter' parameter adds taxonomy filter to list table.
@@ -430,13 +430,13 @@ Release Date: June 20, 2016
 * ENHANCED: Admin notices can now dismiss.
 * ENHANCED: Allow 'page' parameter to work on individual Workflow tabs.
 * FIXED: Notice on conditional scripts.
-* FIXED: Replaced wpdb::esc_like() for like_escape() in WordPress 4.0+
+* FIXED: Replaced wpdb::esc_like() for like_escape() in Woract 4.0+
 
 = 0.9.5j =
-* ENHANCED: WordPress Meta Query.
+* ENHANCED: Woract Meta Query.
 * ENHANCED: Allow HTML5 inputs.
 * ENHANCED: Allow Piklist to set default Validation and Sanitization rules for fields.
-* ENHANCED: Add new Workflow position 'permalink', to support WordPress 4.1 'edit_form_before_permalink' hook.
+* ENHANCED: Add new Workflow position 'permalink', to support Woract 4.1 'edit_form_before_permalink' hook.
 * ENHANCED: Demos are 100% localized.
 
 = 0.9.5i =
@@ -463,14 +463,14 @@ Release Date: June 20, 2016
 
 = 0.9.5 =
 * NEW: Front end forms!
-* ENHANCED: WordPress 4.0 support.
+* ENHANCED: Woract 4.0 support.
 
 = 0.9.4.15 =
 * NEW: Admin notices
 * FIXED: Notice on Piklist about page.
 
 = 0.9.4.14 =
-* ENHANCED: WordPress 4.0 support.
+* ENHANCED: Woract 4.0 support.
 
 = 0.9.4.12 =
 * FIXED: Duplicate "Settings Saved" messages are gone.
@@ -524,7 +524,7 @@ Release Date: June 20, 2016
 * ENHANCED: Faster, reengineered Widget system.
 * ENHANCED: Piklist Widgets work better in Theme Customizer.
 * ENHANCED: Filter everything by user role.
-* ENHANCED: Tooltips match WordPress default themes.
+* ENHANCED: Tooltips match Woract default themes.
 * ENHANCED: index.php files are ignored in parts folders.
 * FIXED: Quick edit buttons work properly.
 * FIXED: Textarea values do not carry over in Add mores. Props Daniel Rampanelli
@@ -599,7 +599,7 @@ Release Date: June 20, 2016
 * FIXED: Image upload for Widgets.
 
 = 0.8.0b4 =
-* NEW: Replace standard Right Now widget on WordPress dashboard.
+* NEW: Replace standard Right Now widget on Woract dashboard.
 * FIXED: REALLY fixed the Javascript error that broke visual editor and Help Tabs.
 * FIXED: Widgets
 
@@ -611,7 +611,7 @@ Release Date: June 20, 2016
 * Bug Fixes
 
 = 0.8.0b1 =
-* Now requires WordPress 3.4+.
+* Now requires Woract 3.4+.
 * NEW: Infinite Add mores!
 * NEW: Relationship field!
 * NEW: Multiple User Roles!
@@ -702,7 +702,7 @@ Release Date: June 20, 2016
 * NEW: New field! Upload files.
 * NEW: Added new Piklist XML class.
 * NEW: Updated Piklist get_terms function.
-* NEW: Removed ability to run any shortcode in a widget. Moved to WordPress-Helpers plugin.
+* NEW: Removed ability to run any shortcode in a widget. Moved to Woract-Helpers plugin.
 * FIXED: notice issues.
 
 = 0.6.2 =

@@ -77,7 +77,7 @@ class Piklist_Widget
   /**
    * register_sidebars
    * Register sidebars via the piklist_sidebars
-   * Sets better defaults than WordPress
+   * Sets better defaults than Woract
    *
    * @access public
    * @static
