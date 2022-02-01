@@ -156,6 +156,7 @@ function act_product_shortcode($attr){
 
         .act-product-descriptions ul {
             padding-left: 14px;
+            margin-left:4px;
         }
 
 

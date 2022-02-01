@@ -29,28 +29,34 @@ function act_table_main_shortcode($attr){
                         $act_tbl_button_bg_color     = get_post_meta(get_the_ID(), 'act_tbl_button_bg_color', true);
                         $act_tbl_button_text_color   = get_post_meta(get_the_ID(), 'act_tbl_button_text_color', true);
                         $act_tbl_btn_text            = get_post_meta(get_the_ID(), 'act_tbl_button_text', true);
-                        $act_tbl_tag_bg_color        = get_post_meta(get_the_ID(), 'act_tbl_tag_bg_color', true);
-                        $act_tbl_tag_text_color      = get_post_meta(get_the_ID(), 'act_tbl_tag_text_color', true);
+                       
                         $act_tbl_txt_color           = get_post_meta(get_the_ID(), 'act_tbl_txt_color', true);
-                        $act_tbl_font_size           = get_post_meta(get_the_ID(), 'act_tbl_font_size', true);
                         $act_tbl_heading_text_one    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_one', true);
                         $act_tbl_heading_text_two    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_two', true);
                         $act_tbl_heading_text_three    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_three', true);
                         $act_tbl_heading_text_four    = get_post_meta(get_the_ID(), 'act_tbl_heading_text_four', true);
                         $act_tbl_product_title_color    = get_post_meta(get_the_ID(), 'act_tbl_product_title_color', true);
-                        $act_tbl_tag_color    = get_post_meta(get_the_ID(), 'act_tbl_tag_color', true);
+                        $act_tbl_tag_bg_color        = get_post_meta(get_the_ID(), 'act_tbl_tag_bg_color', true);
+                        $act_tbl_tag_color    = get_post_meta(get_the_ID(), 'act_tbl_tag_text_color', true);
                         $act_tbl_feature_icon_color    = get_post_meta(get_the_ID(), 'act_tbl_feature_color', true);
+                        $act_tbl_font_size           = get_post_meta(get_the_ID(), 'act_tbl_font_size', true);
                      ?>
                     
                     <style type="text/css">
                         .act-table-tag, .act-table-tag-mobile{
-                            border: 2px solid <?php echo esc_attr($act_tbl_tag_color); ?>;
+                            border: 2px solid <?php echo esc_attr($act_tbl_tag_bg_color); ?>;
+                            background:<?php echo esc_attr($act_tbl_tag_bg_color); ?>; 
+                            color:<?php echo esc_attr($act_tbl_tag_color); ?>
                         }
                         .act-table-tag::before, .act-table-tag-mobile::before{
-                            border-right: 9px solid <?php echo esc_attr($act_tbl_tag_color); ?>;
+                            border-right: 9px solid <?php echo esc_attr($act_tbl_tag_bg_color); ?>;
                         }
-                        .wpstrom-table-pro-feture ul li::before {
-                            background: <?php echo esc_attr($act_tbl_feature_icon_color); ?>;
+                        .wpstrom-table-pro-feture li::marker {
+                            color: <?php echo esc_attr($act_tbl_feature_icon_color); ?>;
+                        }
+
+                        .wpstrom-table-pro-feture li {
+                            list-style: disc;
                         }
                     </style>
 
@@ -74,7 +80,7 @@ function act_table_main_shortcode($attr){
                         <tr>
                             <td class="actall-tbl-colum-one">
                             <?php if($table_meta_value['product_tag_text']): ?>
-                            <div class="act-table-tag" style="background:<?php echo esc_attr($act_tbl_tag_bg_color); ?>">
+                            <div class="act-table-tag">
                                 <span>
                                 <?php echo esc_html($table_meta_value['product_tag_text']); ?>
                                 </span>
@@ -105,10 +111,8 @@ function act_table_main_shortcode($attr){
                             </td>
                             <td class="actall-tbl-colum-three">
                                 <div class="actall-table-features">
-                                    <?php
-                                    if($table_meta_value['product_description']):
-                                        ?>
-                                        <div class="wpstrom-table-pro-feture">
+                                    <?php if($table_meta_value['product_description']):?>
+                                        <div class="wpstrom-table-pro-feture" style="font-size:<?php echo esc_attr($act_tbl_font_size); ?>px">
                                             <?php echo apply_filters('the_content', $table_meta_value['product_description']); ?>
                                         </div>
                                     <?php endif; ?>

@@ -922,9 +922,9 @@ ul.actall-feature-text {
 	margin: 0px 0px 5px -9px;
 	position: relative;
 	text-transform: uppercase;
-	background: #fff;
+	/* background: #fff; */
 	box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
-	border: 2px solid #00B894;
+	/* border: 2px solid #00B894; */
 	padding: 3px 10px;
 	max-width: max-content;
 	max-width: moz-max-content;
@@ -955,7 +955,7 @@ ul.actall-feature-text {
 	left: -3px;
 	content: "";
 	border-bottom: 23px solid transparent;
-	border-right: 9px solid #00B894;
+	/* border-right: 9px solid #00B894; */
 }
 
 .act-table-tag-mobile-label {
@@ -966,9 +966,9 @@ ul.actall-feature-text {
 	margin: auto 0 0px -18px;
 	position: relative;
 	text-transform: uppercase;
-	background: #fff;
+	/* background: #fff; */
 	box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
-	border: 2px solid #00B894;
+	/* border: 2px solid #00B894; */
 	padding: 4px 10px;
 	max-width: max-content;
 	max-width: moz-max-content;
@@ -992,7 +992,7 @@ ul.actall-feature-text {
 	left: -3px;
 	content: "";
 	border-bottom: 13px solid transparent;
-	border-right: 9px solid #00B894;
+	/* border-right: 9px solid #00B894; */
 }
 
 .act-table-tag-mobile-label {
@@ -1736,8 +1736,8 @@ thead.actall-tbl-head {
 }
 
 .product_award:after {
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
+    border-left: 53px solid transparent;
+    border-right: 53px solid transparent;
     border-top: 10px solid #000;
     content: "";
     left: 0;

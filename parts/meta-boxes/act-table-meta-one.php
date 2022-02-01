@@ -126,17 +126,8 @@ piklist('field', array(
 piklist('field', array(
     'type'          => 'colorpicker',
     'field'         => 'act_tbl_txt_color',
-    'label'         => __('Table Text Color', 'acttable'),
+    'label'         => __('Table Feature Color', 'acttable'),
     'value'         => '#3C3C3C',
-    'attributes'    => array(
-        'class'     => 'widefat'
-    ),
-));
-piklist('field', array(
-    'type'          => 'colorpicker',
-    'field'         => 'act_tbl_tag_color',
-    'label'         => __('Table Tag Color', 'acttable'),
-    'value'         => '#00B894',
     'attributes'    => array(
         'class'     => 'widefat'
     ),
@@ -153,9 +144,11 @@ piklist('field', array(
 piklist('field', array(
     'type'          => 'text',
     'field'         => 'act_tbl_font_size',
-    'label'         => __('Table Text Size', 'acttable'),
+    'label'         => __('Table Feature Text Size', 'acttable'),
     'value'         => 18,
     'attributes'    => array(
         'class'     => 'widefat'
     ),
 ));
+
+
